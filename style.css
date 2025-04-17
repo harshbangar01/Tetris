@@ -8,3 +8,52 @@ body{
     justify-content: center;
     height: 100vh;
 }
+
+/* gpt */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #304550;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.controls {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .controls {
+    font-size: 12px;
+  }
+}
